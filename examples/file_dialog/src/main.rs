@@ -104,6 +104,10 @@ fn preview_files_being_dropped(ctx: &egui::Context) {
             text
         });
 
+        // @note layer_painter
+        // 1. create layer Painter with ctx.layer_painter
+        // 2. calc Rect
+        // 3. paint with Painter
         let painter =
             ctx.layer_painter(LayerId::new(Order::Foreground, Id::new("file_drop_target")));
 
